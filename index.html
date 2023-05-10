@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kitchen Express</title>
     <link rel="stylesheet" href="/styles.css" />
-    <script src="/scripts.js" defer type="module"></script>
+    <script src="./scripts.js" defer type="module"></script>
   </head>
 
   <body>
+    <!-- 'add order' button -->
     <header class="actions">
-      <h1 class="sr-only">Kitchen Express</h1>
+      <h1 class="sr-only">Kitchen Express</h1> <!-- "sr-ony" hides the h1 of "Kitchen Express" --> tags
       <div class="actions__inner">
         <button class="button button_primary" data-add>Add Order</button>
       </div>
     </header>
 
+    <!-- 'help' button overlay -->
     <dialog class="overlay" data-help-overlay>
-      <h2 class="overlay__title">Help</h2>
+      <h2 class="overlay__title">Help</h2> 
       <p><strong>To use the app, you can start by adding a new order by clicking the "add order" button.</strong></p>
       <p>You can view and update orders by selecting them directly from the list. Inside the order, you can manually change information associated with an order or update its status. However, note that you can quickly change the status of an order by drag it between the three different columns with your mouse.</p>
       <div class="overlay__row">
         <button class="button" type="button" data-help-cancel>Close</button>
       </div>
     </dialog>
-
+    
+    <!-- 'add order' overlay -->
     <dialog class="overlay" data-add-overlay>
       <div class="overlay__top">
         <h2 class="overlay__title">Add Order</h2>
@@ -49,6 +52,7 @@
       </div>
     </dialog>
 
+    <!-- when you click on an order to 'edit order' --> 
     <dialog class="overlay" data-edit-overlay>
       <div class="overlay__top">
         <h2 class="overlay__title">Edit Order</h2>
@@ -85,6 +89,7 @@
       </div>
     </dialog>
 
+    <!-- homepage of website -->
     <h2 class="sr-only">Orders</h2>
 
     <div class="grid" data-grid>
@@ -104,6 +109,7 @@
       </section>
     </div>
 
+    <!-- 'help' button -->
     <button class="help" data-help>?</button>
     <div class="backdrop"></div>
   </body>
